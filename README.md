@@ -20,6 +20,8 @@ Or install it yourself as:
 
 ## Usage
 
+    require 'haller'
+    
     "Can Vural".to_hal('e') # Can Vural'a
 
 ## Contributing
