@@ -21,7 +21,7 @@ class String
       ek = (son_sesli =~ /[aıou]/).nil? ? 'e' : (istisna == 2) ? 'e' : 'a'
     end
 
-    if son_harf =~ /[aıeiouöü]/
+    if son_harf == son_sesli
       ek = (hal == iyelik) ? 'n' + ek : (hal == i_hali || hal == e_hali) ? 'y' + ek : ek
     end
 
