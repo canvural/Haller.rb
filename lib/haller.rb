@@ -2,9 +2,7 @@ require 'unicode_utils'
 
 class String
   def to_hal(hal)
-    _isim = isim = UnicodeUtils.downcase self, :tr
-
-    isim = isim.split.last
+    isim = UnicodeUtils.downcase(self, :tr).split.last
 
     iyelik   = 'iyelik'
     i_hali   = 'i'
@@ -13,10 +11,8 @@ class String
     den_hali = 'den'
     i_ekleri = 'ııiiuuüü'
 
-    son_harf = isim[-1,1]
-
-    istisna  = (isim =~ /(^[ei][^ıüoö]*[au]l$)|^alp$/).nil? ? 0 : 2
-
+    son_harf  = isim[-1,1]
+    istisna   = (isim =~ /(^[ei][^ıüoö]*[au]l$)|^alp$/).nil? ? 0 : 2
     son_sesli = isim.scan(/[aıeiouöü]/).last
 
     if hal == iyelik || hal == i_hali
@@ -25,11 +21,10 @@ class String
       ek = (son_sesli =~ /[aıou]/).nil? ? 'e' : (istisna == 2) ? 'e' : 'a'
     end
 
-    if son_harf == son_sesli
+    if son_harf =~ /[aıeiouöü]/
       ek = (hal == iyelik) ? 'n' + ek : (hal == i_hali || hal == e_hali) ? 'y' + ek : ek
     end
 
-    # Harf yumusamalarini kontrol eder
     if hal == de_hali || hal == den_hali
       ek = (son_harf =~ /[fstkçşhp]/ ? 't' : 'd') + ek
     end
@@ -38,6 +33,6 @@ class String
       ek << 'n'
     end
 
-    "#{_isim.split.map(&:capitalize)*' '}'#{ek}"
+    "#{self}'#{ek}"
   end
 end

@@ -6,7 +6,7 @@ require 'haller/version'
 Gem::Specification.new do |spec|
   spec.name          = "haller"
   spec.version       = Haller::VERSION
-  spec.authors       = ["kobayakawa"]
+  spec.authors       = ["canvural"]
   spec.email         = ["can9119@gmail.com"]
   spec.summary       = %q{@sercaneraslan'ın Haller.js'inin Ruby portu}
   spec.description   = %q{}
