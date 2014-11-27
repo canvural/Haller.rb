@@ -21,8 +21,13 @@ Or install it yourself as:
 ## Usage
 
     require 'haller'
-    
+
+    "Can Vural".to_hal('iyelik') # Can Vural'ın
+    "Can Vural".to_hal('i') # Can Vural'ı
     "Can Vural".to_hal('e') # Can Vural'a
+    "Can Vural".to_hal('de') # Can Vural'da
+    "Can Vural".to_hal('den') # Can Vural'dan
+
 
 ## Contributing
 
