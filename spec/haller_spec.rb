@@ -14,7 +14,10 @@ describe String do
         ["Burak", "Burak'ın"],
         ["Cem", "Cem'in"],
         ["Aşk", "Aşk'ın"],
-        ["Ahu", "Ahu'nun"]
+        ["Ahu", "Ahu'nun"],
+        ['İstanbul', "İstanbul'un"],
+        ["Cemal", "Cemal'in"],
+        ['Resul', "Resul'ün"]
       ]
 
       data.each do |test, expect|
@@ -33,7 +36,10 @@ describe String do
           ["Burak", "Burak'ı"],
           ["Cem", "Cem'i"],
           ["Aşk", "Aşk'ı"],
-          ["Ahu", "Ahu'yu"]
+          ["Ahu", "Ahu'yu"],
+          ['İstanbul', "İstanbul'u"],
+          ["Cemal", "Cemal'i"],
+          ['Resul', "Resul'ü"]
       ]
 
       data.each do |test, expect|
@@ -52,7 +58,10 @@ describe String do
           ["Burak", "Burak'a"],
           ["Cem", "Cem'e"],
           ["Aşk", "Aşk'a"],
-          ["Ahu", "Ahu'ya"]
+          ["Ahu", "Ahu'ya"],
+          ['İstanbul', "İstanbul'a"],
+          ["Cemal", "Cemal'e"],
+          ['Resul', "Resul'e"]
       ]
 
       data.each do |test, expect|
@@ -71,7 +80,10 @@ describe String do
           ["Burak", "Burak'ta"],
           ["Cem", "Cem'de"],
           ["Aşk", "Aşk'ta"],
-          ["Ahu", "Ahu'da"]
+          ["Ahu", "Ahu'da"],
+          ['İstanbul', "İstanbul'da"],
+          ["Cemal", "Cemal'de"],
+          ['Resul', "Resul'de"]
       ]
 
       data.each do |test, expect|
@@ -90,7 +102,10 @@ describe String do
           ["Burak", "Burak'tan"],
           ["Cem", "Cem'den"],
           ["Aşk", "Aşk'tan"],
-          ["Ahu", "Ahu'dan"]
+          ["Ahu", "Ahu'dan"],
+          ['İstanbul', "İstanbul'dan"],
+          ["Cemal", "Cemal'den"],
+          ['Resul', "Resul'den"]
       ]
 
       data.each do |test, expect|
