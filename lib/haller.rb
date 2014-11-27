@@ -12,7 +12,7 @@ class String
     i_ekleri = 'ııiiuuüü'
 
     son_harf  = isim[-1,1]
-    istisna   = (isim =~ /[ei][^ıüoö]*[au]l$|alp$|^alp$/).nil? ? 0 : 2
+    istisna   = (isim =~ /^[^i][ei][^ıüoö]*[au]l$|alp$|^alp$/).nil? ? 0 : 2
     son_sesli = isim.scan(/[aıeiouöü]/).last
 
     if hal == iyelik || hal == i_hali
