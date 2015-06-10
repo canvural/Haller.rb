@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "haller"
   spec.version       = Haller::VERSION
   spec.authors       = ["canvural"]
-  spec.email         = ["can9119@gmail.com"]
+  spec.email         = ["canvural@gosterge.net"]
   spec.summary       = %q{@sercaneraslan'ın Haller.js'inin Ruby portu}
   spec.description   = %q{}
   spec.homepage      = ""
